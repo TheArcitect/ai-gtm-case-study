@@ -1,0 +1,37 @@
+# {{ project.title }}
+
+**Timeframe:** {{ project.timeframe }}  
+**Customer:** {{ customer.industry }} {{ customer.size }}, {{ customer.region }}  
+{% if project.anonymize %}*Case study anonymized for confidentiality*{% endif %}
+
+## Problem
+
+{{ problem.summary }}
+
+## Approach
+
+{{ evidence.notes }}
+
+## Results
+
+{% for highlight in results.highlights %}
+- {{ highlight }}
+{% endfor %}
+
+### Key Metrics
+
+- **Ramp time:** {{ deltas.ramp_days_pct }}% improvement ({{ metrics.baseline.ramp_days }} → {{ metrics.after.ramp_days }} days)
+- **Meetings per rep/week:** {{ deltas.meetings_pct }}% increase ({{ metrics.baseline.avg_meetings_per_rep_week }} → {{ metrics.after.avg_meetings_per_rep_week }})
+- **Qualified rate:** {{ deltas.qualified_pp }}pp improvement ({{ metrics.baseline.qualified_rate_pct }}% → {{ metrics.after.qualified_rate_pct }}%)
+
+## Evidence
+
+{% for asset in evidence.assets %}
+![{{ asset.caption }}]({{ asset.path }})
+*{{ asset.caption }}*
+{% endfor %}
+
+---
+
+**Ready to transform your GTM metrics?**  
+Contact: [{{ cta.contact_email }}](mailto:{{ cta.contact_email }}) | [LinkedIn]({{ cta.link }})

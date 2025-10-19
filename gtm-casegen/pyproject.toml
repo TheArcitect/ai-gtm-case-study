@@ -1,0 +1,28 @@
+[project]
+name = "gtm-casegen"
+version = "0.1.0"
+description = "Turn before/after metrics + screenshots into a polished case study (Markdown)."
+readme = "README.md"
+authors = [
+    { name = "Michael Schaeffer", email = "michael@letsexperiment.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "typer",
+    "rich", 
+    "jinja2",
+    "pyyaml"
+]
+
+[project.scripts]
+gtm-casegen = "gtm_casegen:main"
+
+[build-system]
+requires = ["uv_build>=0.9.4,<0.10.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4.2",
+    "ruff>=0.14.1",
+]

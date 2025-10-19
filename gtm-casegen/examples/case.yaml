@@ -1,0 +1,32 @@
+project:
+  title: Reduced SDR ramp time with GenAI call notes
+  anonymize: true
+  timeframe: "Jan\u2013Mar 2025"
+customer:
+  industry: SaaS
+  size: Series B (~120)
+  region: US
+problem:
+  summary: "Slow ramp & inconsistent handoffs SDR \u2192 AE."
+metrics:
+  baseline:
+    ramp_days: 60
+    avg_meetings_per_rep_week: 4.2
+    qualified_rate_pct: 21
+  after:
+    ramp_days: 38
+    avg_meetings_per_rep_week: 6.1
+    qualified_rate_pct: 29
+evidence:
+  notes: LLM prompts standardized notes & summaries.
+  assets:
+  - path: examples/assets/placeholder.png
+    caption: Pipeline growth (redacted)
+results:
+  highlights:
+  - "Ramp time \u2193 36.7% (60 \u2192 38 days)"
+  - "Meetings/rep/week \u2191 45% (4.2 \u2192 6.1)"
+  - "Qualified rate \u2191 8pp (21% \u2192 29%)"
+cta:
+  contact_email: michael@letsexperiment.com
+  link: https://linkedin.com/in/michael-schaeffer-ba3762382/
