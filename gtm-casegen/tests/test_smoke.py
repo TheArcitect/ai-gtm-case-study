@@ -4,8 +4,6 @@ import tempfile
 from pathlib import Path
 from subprocess import run
 
-import pytest
-
 
 def test_smoke():
     """Test the complete CLI workflow."""

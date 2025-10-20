@@ -1,15 +1,12 @@
 """CLI commands for gtm-casegen."""
 
 import base64
-import os
 from pathlib import Path
-from typing import Optional
 
 import typer
 import yaml
 from jinja2 import Environment, FileSystemLoader
 from rich.console import Console
-from rich.logging import RichHandler
 
 # Initialize Rich console and logging
 console = Console()
